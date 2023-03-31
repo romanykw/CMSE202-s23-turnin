@@ -145,7 +145,6 @@ class Animal_Agent():
         all_agents (list): A list of all of the animal agent objects 
         time (int): The current time, used to determine if the Animal Agent has passed the gestation period.
         '''
-        
         child_list = []
         val = random.random()
         if (self.sex == 'F') and (np.mod(abs(time-self.last_litter_time),self.gestation) == 0):
@@ -168,5 +167,7 @@ class Animal_Agent():
                     break
 
         return child_list
+
+
 
 
